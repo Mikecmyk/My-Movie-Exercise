@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "my-movie-exercise",
+		"liveServer.settings.port": 5501
+	}
+}

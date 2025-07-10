@@ -1,0 +1,24 @@
+body {
+    font-family: "Manufacturing Consent", system-ui;
+    text-align: centre;
+    background-color: #0d0d0e;
+    color: #f2ecec;
+    margin: 0;
+    padding: 20px;
+}
+
+.movie {
+    margin: 20px;
+}
+
+.movie img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ee1313;
+}
+
+a {
+    color: #1db954;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
