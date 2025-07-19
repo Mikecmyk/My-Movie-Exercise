@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Movie Posters</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap" rel="stylesheet">
-    <link rel="stylesheet" a href="styles.css">
-    <head>
-        <body>
-
-    <h1>Movie previews</h1>
-    <p>Enjoy most of the epic movies right now</p>
-
-    <div class="movie-container">
-
-        <div class="movie card">
-        <a href="invincible.html">
-            <img src="invincible.jpg"width="190px" alt="invincible Poster">
-            <h2>Invincible</h2>
-        </a>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Movie Project Review</title>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  min-height:100vh;
+  width:100%;
+  font-family:'Alfa Slab One',sans-serif;
+  color:#efeded;
+  text-align:center;
+  background:url(boys.jpg) center/cover no-repeat fixed;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:2rem;
+  position:relative;
+}
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:-1;
+}
+.content{max-width:700px;margin-inline:auto;z-index:1;}
+h1{font-size:clamp(1.75rem,5vw,3rem);margin-bottom:1.25rem;text-shadow:2px 2px 5px #000;}
+p{font-size:clamp(.95rem,2.5vw,1.1rem);margin:0 auto 2.5rem;max-width:500px;text-shadow:1px 1px 3px #000;}
+.icons{display:flex;gap:1.25rem;flex-wrap:wrap;justify-content:center;}
+.icon-card{
+  width:120px;height:160px;
+  background:rgba(255,255,255,.1);
+  border:2px solid #0d0c0c;
+  border-radius:20px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;padding:10px;
+  transition:transform .3s ease,background-color .3s ease;
+  backdrop-filter:blur(8px);
+  cursor:pointer;overflow:hidden;
+}
+.icon-card img{width:100%;height:100%;object-fit:cover;border-radius:18px;}
+.icon-card:hover{transform:scale(1.1);background-color:rgba(255,255,255,.3);} 
+a{text-decoration:none;color:#eaebf0;}
+@media (max-width:600px){.icon-card{width:100px;height:140px;font-size:11px;}}
+</style>
+</head>
+<body>
+  <div class="content">
+    <h1>WELCOME TO MY MOVIE PROJECT REVIEW</h1>
+    <p>Hi, welcome to my movie project review. These are some of my favorite movies that I’d love for you to enjoy.</p>
+    <div class="icons">
+      <a href="invincible.html"><div class="icon-card"><img src="invincible.jpg"></div></a>
+      <a href="theboys.html"><div class="icon-card"><img src="theboys.jpg" alt="The Boys" /></div></a>
+      <a href="thewitcher.html"><div class="icon-card"><img src="thewitcher.jpg" alt="The Witcher" /></div></a>
     </div>
-
-    <div class="movie card">
-        <a href="theboys.html">
-            <img src="theboys.jpg"width="250px" alt="The Boys Poster">
-            <h2>The Boys</h2>
-        </a>
-        </div>
-
-        <div class="movie card">
-            <a href="thewitcher.html">
-                <img src="thewitcher.jpg"width="190px" alt="The Witcher Poster">
-                <h2>The Witcher</h2>
-                </a>
-                </div>
-
-                <div class="movie card">
-                <a href="strangerthings.html">
-                    <img src="strangerthings.jpg"width="190px" alt="Stranger Things Poster">
-                </a>
-        </div>
-        </div>
-
- </body>
- </html>       
+  </div>
+</body>
+</html>
